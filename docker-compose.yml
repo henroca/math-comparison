@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  math_comparison:
+    build: 
+      context: ./docker
+    volumes:
+      - .:/home/app
+    stdin_open: true
+    tty: true
