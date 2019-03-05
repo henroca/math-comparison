@@ -1,4 +1,4 @@
-require "math/comparison/version"
+require 'math/comparison/version'
 
 module Math
   module Comparison
