@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/henroca/math-comparison.svg?branch=master)](https://travis-ci.org/henroca/math-comparison)
-[![Coverage Status](https://coveralls.io/repos/github/henroca/math-comparison/badge.svg?branch=master)](https://coveralls.io/github/henroca/math-comparison?branch=master)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/207b4ebd66bfb40aee05/test_coverage)](https://codeclimate.com/github/henroca/math-comparison/test_coverage)
 [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/henroca/math-comparison)
 
 # Math::Comparison
