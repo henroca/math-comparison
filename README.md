@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/henroca/math-comparison.svg?branch=master)](https://travis-ci.org/henroca/math-comparison)
+[![Coverage Status](https://coveralls.io/repos/github/henroca/math-comparison/badge.svg?branch=master)](https://coveralls.io/github/henroca/math-comparison?branch=master)
+[![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/henroca/math-comparison)
+
 # Math::Comparison
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/math/comparison`. To experiment with that code, run `bin/console` for an interactive prompt.
