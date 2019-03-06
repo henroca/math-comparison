@@ -26,4 +26,16 @@ RSpec.describe Math::Comparison::ShellIterator do
       expect(command.result).to eq('Hello World!!')
     end
   end
+
+  context 'when the command fails' do
+    let(:command) do
+      Math::Comparison::ShellIterator.exec('invalid_command', '"Hello World!!"')
+    end
+
+    it 'resturns the result' do
+      expect { command.result }.to raise_error(
+        Math::Comparison::Exceptions::CommandError
+      )
+    end
+  end
 end
