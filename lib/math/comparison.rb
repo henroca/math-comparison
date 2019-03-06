@@ -1,5 +1,6 @@
 require 'math/comparison/version'
 require 'math/comparison/shell_iterator'
+require 'math/comparison/python_inteface'
 
 module Math
   module Comparison
