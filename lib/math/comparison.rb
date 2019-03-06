@@ -1,4 +1,5 @@
 require 'math/comparison/version'
+require 'math/comparison/shell_iterator'
 
 module Math
   module Comparison
