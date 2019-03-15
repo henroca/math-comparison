@@ -1,9 +1,13 @@
-RSpec.describe Enums::Comparison do
+RSpec.describe Math::Comparison::Enums::Comparison do
   it 'returns DEFAULT' do
-    expect(Enums::Comparison::DEFAULT).to eq 'DEFAULT'
+    expect(
+      Math::Comparison::Enums::Comparison::DEFAULT
+    ).to eq 'DEFAULT'
   end
 
   it 'returns EQUATION' do
-    expect(Enums::Comparison::EQUATION).to eq 'EQUATION'
+    expect(
+      Math::Comparison::Enums::Comparison::EQUATION
+    ).to eq 'EQUATION'
   end
 end
