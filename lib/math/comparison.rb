@@ -8,8 +8,12 @@ require 'math/comparison/python_inteface'
 require 'math/comparison/comparator'
 
 module Math
+  # Module comparison
   module Comparison
-    class Error < StandardError; end
-    # Your code goes here...
+    def self.eql?(first_value, second_value)
+      comparator = Comparator.new(first_value, second_value)
+      comparator.set_type
+      comparator.equal?
+    end
   end
 end
