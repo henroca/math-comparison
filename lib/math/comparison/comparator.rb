@@ -2,8 +2,6 @@ module Math
   module Comparison
     # Comparator class
     class Comparator
-      include Enums
-
       attr_accessor :first_value, :second_value, :type
 
       def initialize(first_value, second_value)
@@ -18,11 +16,9 @@ module Math
       end
 
       def equal?
-        begin
-          exec_python == 'True'
-        rescue => exception
-          raise Exceptions::MathematicalSyntaxError
-        end
+        exec_python == 'True'
+      rescue Exceptions::CommandError
+        raise Exceptions::MathematicalSyntaxError
       end
 
       def self.make(first_value, second_value)
@@ -40,8 +36,8 @@ module Math
       def exec_python
         PythonInteface.exec(
           @python_comparator,
-          "\"#{first_value}\"",
-          "\"#{second_value}\"",
+          first_value,
+          second_value,
           type
         )
       end

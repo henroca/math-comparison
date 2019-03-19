@@ -3,7 +3,7 @@ module Math
     module Exceptions
       # Error to invalid mathematical syntax
       class MathematicalSyntaxError < StandardError
-        def initialize()
+        def initialize
           super('invalid mathematical syntax')
         end
       end
