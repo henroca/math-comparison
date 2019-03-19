@@ -18,7 +18,11 @@ module Math
       end
 
       def equal?
-        exec_python == 'True'
+        begin
+          exec_python == 'True'
+        rescue => exception
+          raise Exceptions::MathematicalSyntaxError
+        end
       end
 
       def self.make(first_value, second_value)

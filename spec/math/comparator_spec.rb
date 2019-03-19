@@ -42,5 +42,18 @@ RSpec.describe Math::Comparison::Comparator do
         end
       end
     end
+
+    context 'when the comparison fails' do
+      it 'throws the MathematicalSyntaxError' do
+        default_comparator.first_value = '2*x +'
+
+        expect {
+          default_comparator.equal?
+        }.to raise_error(
+          Math::Comparison::Exceptions::MathematicalSyntaxError,
+          "invalid mathematical syntax"
+        )
+      end
+    end
   end
 end
