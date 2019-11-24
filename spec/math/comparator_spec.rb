@@ -40,6 +40,11 @@ RSpec.describe Math::Comparison::Comparator do
           equation_comparator.first_value = '2*x + 5 = 4'
           expect(equation_comparator).not_to be_equal
         end
+
+        it 'returns not equal to different type' do
+          default_comparator.second_value = '2*x + 5 = 4'
+          expect(default_comparator).not_to be_equal
+        end
       end
     end
 

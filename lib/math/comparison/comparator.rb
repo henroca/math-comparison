@@ -16,6 +16,8 @@ module Math
       end
 
       def equal?
+        return false if !same_type?
+
         exec_python == 'True'
       rescue Exceptions::CommandError
         raise Exceptions::MathematicalSyntaxError
@@ -28,6 +30,13 @@ module Math
       end
 
       private
+
+      def same_type?
+        first_type = first_value =~ /\=/
+        second_type = second_value =~ /\=/
+
+        first_type == second_type
+      end
 
       def equation?
         first_value =~ /\=/
