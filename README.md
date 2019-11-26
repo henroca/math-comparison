@@ -4,39 +4,38 @@
 
 # Math::Comparison
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/math/comparison`. To experiment with that code, run `bin/console` for an interactive prompt.
+Uma bibliotéca em `Ruby` para comparar respostas matemática
 
-TODO: Delete this and the text above, and describe your gem
+## Instalação
 
-## Installation
-
-Add this line to your application's Gemfile:
+Adicionar no `Gemfile`
 
 ```ruby
 gem 'math-comparison'
 ```
 
-And then execute:
+E executar
 
     $ bundle
 
-Or install it yourself as:
+## Uso
 
-    $ gem install math-comparison
+Exemplo de uso: 
 
-## Usage
+```ruby
+comparator = Math::Comparison::Comparator.make '2x + 4', 'x + 2'
+comparator.equal?
+```
 
-TODO: Write usage instructions here
+## Contribuir
 
-## Development
+Clonar o repositório e utilizar o `Docker` e `Docker Compose` e rodar os comandos:
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+`docker-compose up -d`
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+rodar teste:
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/math-comparison.
+`docker-compose exec math_comparison bundle exec rspec`
 
 ## License
 
